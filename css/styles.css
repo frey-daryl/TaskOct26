@@ -143,4 +143,7 @@ html {
     .bottom-container {
         justify-content: center;
     }
+    .cont-left h2 {
+        text-align: center;
+    }
 }
