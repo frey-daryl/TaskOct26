@@ -77,6 +77,7 @@ html {
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     font-weight: 400;
+    text-align: center;
 }
 
 .cont-right {
@@ -137,13 +138,11 @@ html {
     .title {
         justify-content: center;
     }
+   
 }
 
 @media (max-width: 500px) {
     .bottom-container {
         justify-content: center;
-    }
-    .cont-left h2 {
-        text-align: center;
     }
 }
