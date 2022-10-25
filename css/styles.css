@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+}
+
+
+.main-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(5,200,227,1) 0%, rgba(13,111,157,1) 60%, rgba(2,2,59,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.outer-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    padding: 40px;
+    
+}
+
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.cont-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgba(1, 68, 95, 0.589);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cont-left img {
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(5,200,227);
+    cursor: pointer;
+    transition: transform .15s, box-shadow .15s;
+    transition-timing-function: ease-in-out;
+}
+
+.cont-left img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgb(5,200,227);
+}
+
+.cont-left h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.cont-right {
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    background-color: rgba(1, 68, 95, 0.589);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.title h2 {
+    font-size: 25px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(1, 68, 95, 0.589);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content ul {
+    margin-left: 20px;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-name p {
+    font-size: 20px;
+    font-family: 'Audiowide', cursive;
+}
+
+.logo-name img {
+    width: 100px;
+}
+
+@media (max-width: 1000px) {
+    .top-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .title {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .bottom-container {
+        justify-content: center;
+    }
+}
